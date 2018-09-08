@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+
+<!-- Firebase App is always required and must be first -->
+<script src="https://www.gstatic.com/firebasejs/5.0.4/firebase-app.js"></script>
+
+<!-- Add additional services you want to use -->
+<script src="https://www.gstatic.com/firebasejs/5.0.4/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.0.4/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.0.4/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.0.4/firebase-messaging.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.0.4/firebase-functions.js"></script>
+
+<!-- Comment out (or don't include) services you don't want to use -->
+<script src="https://www.gstatic.com/firebasejs/5.0.4/firebase-storage.js"></script> 
+
+
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge"> 
+  <title>Crime</title>
+<!--<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css" />  -->
+
+     
+
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1 class="brand"><span>Crime Admin</span></h1>
+    <div class="wrapper">
+      <div class="company-info">
+        <h3>Search Crime Details</h3>
+<!--a form to display user searched data    -->
+<form class="form-3" method="post" id="searcher">
+   <input type="text" name="check" id="check" placeholder="input id to search">
+     <button type="submit" name="submit" id="bot" ">SUBMIT</button>
+</form>
+     <!-- hidden div to display the values searched-->    
+     <div id="show" class="aq">
+
+     </div>
+<!--end of the form    --> 
+
+
+      </div>
+      <div class="contact">
+        <h3>Add Crime Details</h3>
+        <div class="alert">Crime data has been added successfully.</div>
+        <form id="contactForm">
+          <p>
+            <label>County</label>
+            <input type="text" name="county" id="county" required>
+          </p>
+          <p>
+            <label>Law reporting area</label>
+            <input type="text" name="'location'" id="location" required>
+          </p>
+
+
+           <p>
+            <label>Citizen Name</label>
+            <input type="text" name="name" id="name" required>
+          </p>
+          <p>
+            <label>Citizen Id</label>
+            <input type="text" name="id" id="id" required>
+          </p>
+
+          <p>
+            <label>Offence commited</label>
+            <input type="text" name="offence" id="offence"  required>
+          </p>
+          <p>
+            <label>Offender Description</label>
+            <input type="text" name="description" id="description" required>
+          </p>
+           <p>
+            <label>Evidence</label>
+            <input type="text" name="evidence" id="evidence" required>
+          </p>
+           <p>
+            <label>Date</label>
+            <input type="text" name="time" id="time" required>
+          </p>
+          <p>
+            <label>Arresting / Processing officer</label>
+            <input type="text" name="officer" id="officer" required>
+          </p>
+          <p class="full">
+            <label>Any Comments on Student</label>
+            <textarea name="message" rows="5" id="message" ></textarea>
+          </p>
+          <p class="full">
+            <button type="submit">Submit</button>
+          </p>
+        </form>
+      </div>
+    </div>
+  </div>
+  
+  <script src="crime.js"></script>
+
+</body>
+</html>

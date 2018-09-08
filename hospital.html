@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+
+<!-- Firebase App is always required and must be first -->
+<script src="https://www.gstatic.com/firebasejs/5.0.4/firebase-app.js"></script>
+
+<!-- Add additional services you want to use -->
+<script src="https://www.gstatic.com/firebasejs/5.0.4/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.0.4/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.0.4/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.0.4/firebase-messaging.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.0.4/firebase-functions.js"></script>
+
+<!-- Comment out (or don't include) services you don't want to use -->
+<script src="https://www.gstatic.com/firebasejs/5.0.4/firebase-storage.js"></script> 
+
+
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Hospital</title>
+<!--<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css" />  -->
+
+     
+
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1 class="brand"><span>Hospital Admin</span></h1>
+    <div class="wrapper">
+      <div class="company-info">
+        <h3>Search Patient Details</h3>
+<!--a form to display user searched data    -->
+<form class="form-3" method="post" id="searcher">
+   <input type="text" name="check" id="check" placeholder="input id to search">
+     <button type="submit" name="submit" id="bot" ">SUBMIT</button>
+</form>
+     <!-- hidden div to display the values searched-->    
+     <div id="show" class="aq">
+
+     </div>
+<!--end of the form    --> 
+
+
+      </div>
+      <div class="contact">
+        <h3>Add Patient Details</h3>
+        <div class="alert">Patient data has been added successfully.</div>
+        <form id="contactForm">
+          <p>
+            <label>County</label>
+            <input type="text" name="county" id="county" required>
+          </p>
+          <p>
+            <label>Hospital Name</label>
+            <input type="text" name="hospital" id="hospital" required>
+          </p>
+
+
+           <p>
+            <label>Patient Name</label>
+            <input type="text" name="name" id="name" required>
+          </p>
+          <p>
+            <label>Patient Id</label>
+            <input type="text" name="id" id="id" required>
+          </p>
+
+          <p>
+            <label>Diagnosis</label>
+            <input type="text" name="diagnosis" id="diagnosis"  required>
+          </p>
+          <p>
+            <label>Test carried</label>
+            <input type="text" name="test" id="test" required>
+          </p>
+          <p>
+            <label>Medication</label>
+            <input type="text" name="medicine" id="medicine" required>
+          </p>
+
+
+
+          <p>
+            <label>Turn around time</label>
+            <input type="text" name="time" id="time" required>
+          </p>
+          <p class="full">
+            <label>Any Comments / Patient history</label>
+            <textarea name="message" rows="5" id="message" ></textarea>
+          </p>
+          <p class="full">
+            <button type="submit">Submit</button>
+          </p>
+        </form>
+      </div>
+    </div>
+  </div>
+  
+  <script src="hospital.js"></script>
+
+</body>
+</html>

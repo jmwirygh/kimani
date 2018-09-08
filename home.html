@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <style>
+  
+        body {
+            background-image: url("adminWall.jpg");
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+        }
+   .form-3 {
+    font-family: 'Ubuntu', 'Lato', sans-serif;
+    font-weight: 400;
+    /* Size and position */
+    width: 300px;
+    position: relative;
+    margin: 60px auto 30px;
+    padding: 10px;
+    overflow: hidden;
+
+    /* Styles */
+    background: #111; 
+    border-radius: 0.4em;
+    border: 1px solid #191919;
+    box-shadow: 
+        inset 0 0 2px 1px rgba(255,255,255,0.08), 
+        0 16px 10px -8px rgba(0, 0, 0, 0.6);
+} 
+.form-3 label {
+    /* Size and position */
+    width: 50%;
+    float: left;
+    padding-top: 9px;
+
+    /* Styles */
+    color: #ddd;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-shadow: 0 1px 0 #000;
+    text-indent: 10px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.form-3 input[type=text],
+.form-3 input[type=password] {
+    /* Size and position */
+    width: 50%;
+    float: left;
+    padding: 8px 5px;
+    margin-bottom: 10px;
+    font-size: 12px;
+
+    /* Styles */
+    background: linear-gradient(#1f2124, #27292c);    
+    border: 1px solid #000;
+    box-shadow:
+        0 1px 0 rgba(255,255,255,0.1);
+    border-radius: 3px;
+
+    /* Font styles */
+    font-family: 'Ubuntu', 'Lato', sans-serif;
+    color: #fff;
+
+}
+
+.form-3 input[type=text]:hover,
+.form-3 input[type=password]:hover,
+.form-3 label:hover ~ input[type=text],
+.form-3 label:hover ~ input[type=password] {
+    background: #27292c;
+}
+
+.form-3 input[type=text]:focus, 
+.form-3 input[type=password]:focus {
+    box-shadow: inset 0 0 2px #000;
+    background: #494d54;
+    border-color: #51cbee;
+    outline: none; /* Remove Chrome outline */
+}
+#bot{
+  border-radius: 8px;
+  background-color: #4CAF50;
+  color: white;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px
+}
+ a {
+    background-color:  #C0C0C0;
+    color: black;
+    display: block;
+    padding: 12px;
+    text-decoration: none;
+}
+
+ a:hover {
+    background-color: green;
+}
+
+ a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+</style>
+</head>  
+<form class="form-3" method="post" >
+    <a href="#">CITIZEN LOGIN</a><br>
+    <a href="hospital.html">HOSPITAL LOGIN</a><br>
+    <a href="school.html">SCHOOL LOGIN</a><br>
+    <a href="crime.html">CRIME LOGIN</a><br>
+    <a href="#">ADMIN LOGIN</a>
+    <p style="color: red;">NOTICE:: there is no login pages yet, this can be easily achieved by using a login popo-up</p>
+    <p style="color: red;">The admin interface is not yet done. The platform is using google firebase realtime-database</p>
+    </p>       
+</form>
+</body>
+</html>

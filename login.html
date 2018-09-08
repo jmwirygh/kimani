@@ -1,0 +1,40 @@
+<html>
+<head>
+  <title>Login</title>
+  <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
+  <link rel="stylesheet" href="login.css" />
+</head>
+<body>
+
+  <div id="login_div" class="main-div">
+    <h3>Kenya Data Project</h3>
+    <input type="email" placeholder="Email..." id="email_field" />
+    <select class="sel">
+      <option value="user">Citizen Login</option>
+      <option value="doctor">Hospital Admin</option>
+      <option value="teacher">Education Admin</option>
+      <option value="police">Police Admin</option>
+    </select>
+    <input type="password" placeholder="Password..." id="password_field" />
+
+    <button onclick="login()">Login to Account</button>
+  </div>
+
+
+
+  <!-- Firebase App is always required and must be first -->
+<script src="https://www.gstatic.com/firebasejs/5.0.4/firebase-app.js"></script>
+
+<!-- Add additional services you want to use -->
+<script src="https://www.gstatic.com/firebasejs/5.0.4/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.0.4/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.0.4/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.0.4/firebase-messaging.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.0.4/firebase-functions.js"></script>
+
+<!-- Comment out (or don't include) services you don't want to use -->
+<script src="https://www.gstatic.com/firebasejs/5.0.4/firebase-storage.js"></script> 
+  <script src="login.js"></script>
+
+</body>
+</html>

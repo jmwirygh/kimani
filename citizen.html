@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style type="text/css">
+ 
+
+.leftpane {
+    width: 33%;
+    height: 100%;
+    float: left;
+   background:black;
+   color:white;
+    border-collapse: collapse;
+}
+
+.middlepane {
+    width: 34%;
+    height: 100%;
+    float: left;
+      background:black;
+   color:white;
+    border-collapse: collapse;
+}
+
+.rightpane {
+  width: 33%;
+  height: 100%;
+  position: relative;
+  float: right;
+    background:black;
+   color:white;
+  border-collapse: collapse;
+}
+
+.toppane {
+  width: 100%;
+  height: 100px;
+  border-collapse: collapse;
+   background:black;
+   color:white;
+}
+.show{
+  margin:20px;
+   background-color: white;
+   border: 1px solid black;
+   
+}
+
+.show p{
+
+  color: blue;
+}
+.show div{
+  border: 1px solid #333;
+  box-shadow: 8px 8px 5px #444;
+  padding: 8px 12px;
+  background-image: linear-gradient(180deg, #fff, #ddd 40%, #ccc);
+}
+
+</style>>
+
+<!-- Firebase App is always required and must be first -->
+<script src="https://www.gstatic.com/firebasejs/5.0.4/firebase-app.js"></script>
+
+<!-- Add additional services you want to use -->
+<script src="https://www.gstatic.com/firebasejs/5.0.4/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.0.4/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.0.4/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.0.4/firebase-messaging.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.0.4/firebase-functions.js"></script>
+
+<!-- Comment out (or don't include) services you don't want to use -->
+<script src="https://www.gstatic.com/firebasejs/5.0.4/firebase-storage.js"></script> 
+
+
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Hospital</title>
+<!--<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css" />  -->
+
+     
+
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+  <div class="toppane">
+    <div id="username">USER NAME HERE AFTER LOGGED IN</div>
+    <h2 style="color:red;">NOTE:: the default form is set as form 3: This will be changed from database so that data is soughted from form 1 to form 4(create an input for form) - we dont have a choice for universities yet. Make a log out button</h2></div>
+  <div class="leftpane">
+    <h1>Schooling Information</h1>
+    <div id="school" class="show">
+
+     </div>
+  </div>
+  <div class="middlepane">
+    <h1>Medical Information</h1>
+    <div id="hospital" class="show">
+
+     </div>
+  </div>
+  <div class="rightpane">
+    <h1>Crime Information</h1>
+    <div id="crime" class="show">
+
+     </div>
+   </div>
+</div>
+
+  
+  <script src="citizen.js"></script>
+
+</body>
+</html>
