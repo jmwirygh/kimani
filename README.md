@@ -1,4 +1,4 @@
-# weekend prooject
+# weekend project
 
 working with firebase
 
